@@ -1,0 +1,32 @@
+export default [
+    {
+        path:"/basketball",
+        component:()=>import("../../../components/prefecture/pre_index.vue"),
+        name:"篮球专区"
+    },
+    {
+        path:"/running",
+        component:()=>import("../../../components/prefecture/pre_index.vue"),
+        name:"跑步专区"
+    },
+    {
+        path:"/fitness",
+        component:()=>import("../../../components/prefecture/pre_index.vue"),
+        name:"健身专区"
+    },
+    {
+        path:"/football",
+        component:()=>import("../../../components/prefecture/pre_index.vue"),
+        name:"足球专区"
+    },
+    {
+        path:"/tide",
+        component:()=>import("../../../components/prefecture/pre_index.vue"),
+        name:"潮流专区"
+    },
+    {
+        path:"/numerical",
+        component:()=>import("../../../components/prefecture/pre_index.vue"),
+        name:"数码专区"
+    },
+]

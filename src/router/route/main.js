@@ -1,0 +1,61 @@
+import prefecture from "./prefecture/prefecture"
+export default [
+    {
+        path: "/main", 
+        name: "主页" ,
+        component: ()=>import("../../views/main.vue"), 
+        children:[
+            {
+                path:"recommend",
+                component:()=>import("../../components/main/listSubMenu.vue"),
+                children:[
+                    {path:"all",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"single_rc",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"original",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"user_pic",component:()=>import("../../components/main/listItem.vue")},
+                ]
+            },
+            {
+                path:"basketball",
+                component:()=>import("../../components/main/listSubMenu.vue"),
+                children:[
+                    {path:"all",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"single_rc",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"original",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"user_pic",component:()=>import("../../components/main/listItem.vue")},
+                ]
+            },
+            {
+                path:"running",
+                component:()=>import("../../components/main/listSubMenu.vue"),
+                children:[
+                    {path:"all",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"single_rc",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"original",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"user_pic",component:()=>import("../../components/main/listItem.vue")},
+                ]
+            },
+            {
+                path:"fitness",
+                component:()=>import("../../components/main/listSubMenu.vue"),
+                children:[
+                    {path:"all",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"single_rc",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"original",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"user_pic",component:()=>import("../../components/main/listItem.vue")},
+                ]
+            },
+            {
+                path:"tide",
+                component:()=>import("../../components/main/listSubMenu.vue"),
+                children:[
+                    {path:"all",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"single_rc",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"original",component:()=>import("../../components/main/listItem.vue")},
+                    {path:"user_pic",component:()=>import("../../components/main/listItem.vue")},
+                ]
+            },
+        ]
+    },
+    ...prefecture
+]
